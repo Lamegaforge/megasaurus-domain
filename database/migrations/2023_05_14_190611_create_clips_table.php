@@ -3,7 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\Author;
 use Domain\Enums\ClipStateEnum;
 
 return new class extends Migration
@@ -15,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('clips', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Author::class);
+            $table->unsignedBigInteger('author_id');
             $table->string('external_id')->unique();
             $table->string('external_game_id');
             $table->string('url');
