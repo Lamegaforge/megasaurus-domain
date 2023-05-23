@@ -1,4 +1,7 @@
 {
     "name": "lamegaforge/megasaurus-domain",
-    "require": {}
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+    },
 }
