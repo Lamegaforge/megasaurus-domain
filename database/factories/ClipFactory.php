@@ -4,8 +4,8 @@ namespace Domain\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Domain\Enums\ClipStateEnum;
-use Domains\Models\Clip;
-use Domains\Models\Author;
+use Domain\Models\Clip;
+use Domain\Models\Author;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Clip>
