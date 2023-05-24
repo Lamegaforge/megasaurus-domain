@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Domain\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Domain\Enums\ClipStateEnum;
