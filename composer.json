@@ -6,10 +6,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Domain\\": "src"
-        },
-        "classmap": [
-            "database"
-        ]
+            "Domain\\": "src/",
+            "Domain\\Factories\\": "database/factories/"
+        }
     }
 }
