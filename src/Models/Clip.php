@@ -43,6 +43,6 @@ class Clip extends Model
 
     protected static function newFactory()
     {
-        return \Domains\Factories\ClipFactory::new();
+        return \Domain\Factories\ClipFactory::new();
     }
 }

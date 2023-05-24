@@ -25,6 +25,6 @@ class Author extends Model
 
     protected static function newFactory()
     {
-        return \Domains\Factories\AuthorFactory::new();
+        return \Domain\Factories\AuthorFactory::new();
     }
 }

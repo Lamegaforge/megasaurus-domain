@@ -21,6 +21,6 @@ class Game extends Model
 
     protected static function newFactory()
     {
-        return \Domains\Factories\GameFactory::new();
+        return \Domain\Factories\GameFactory::new();
     }
 }
