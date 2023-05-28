@@ -12,6 +12,8 @@ use Domain\Models\Author;
  */
 class ClipFactory extends Factory
 {
+    public $model = Clip::class;
+
     /**
      * Define the model's default state.
      *
