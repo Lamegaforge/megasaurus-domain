@@ -13,7 +13,8 @@ class Clip extends Model
     protected $fillable = [
         'external_id',
         'external_game_id',
-        'creator_id',
+        'author_id',
+        'game_id',
         'url',
         'title',
         'views',
@@ -38,7 +39,7 @@ class Clip extends Model
 
     public function game()
     {
-        return $this->belongsTo(Game::class, 'external_game_id', 'external_id');
+        return $this->belongsTo(Game::class);
     }
 
     protected static function newFactory()

@@ -15,6 +15,7 @@ return new class extends Migration
         Schema::create('clips', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('author_id');
+            $table->unsignedBigInteger('game_id');
             $table->string('external_id')->unique();
             $table->string('external_game_id');
             $table->string('url');
