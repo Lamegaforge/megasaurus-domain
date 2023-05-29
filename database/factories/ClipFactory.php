@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Domain\Enums\ClipStateEnum;
 use Domain\Models\Clip;
 use Domain\Models\Author;
+use Domain\Models\Game;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Clip>
@@ -47,6 +48,9 @@ class ClipFactory extends Factory
         return $this->afterMaking(function (Clip $clip) {
             if ($clip->author()->doesntExist()) {
                 $clip->author()->associate(Author::factory()->create());
+            }
+            if ($clip->game()->doesntExist()) {
+                $clip->game()->associate(Game::factory()->create());
             }
         });
     }
