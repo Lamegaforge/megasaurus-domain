@@ -17,7 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('author_id');
             $table->unsignedBigInteger('game_id');
             $table->string('external_id')->unique();
-            $table->string('external_game_id');
+            $table->string('external_game_id')->nullable();
             $table->string('url');
             $table->string('title');
             $table->integer('views');
