@@ -19,6 +19,11 @@ class Game extends Model
         'external_id' => 'string',
     ];
 
+    public function clips()
+    {
+        return $this->hasMany(Clip::class);
+    }
+
     protected static function newFactory()
     {
         return \Domain\Factories\GameFactory::new();
