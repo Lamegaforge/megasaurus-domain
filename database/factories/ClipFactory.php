@@ -25,7 +25,7 @@ class ClipFactory extends Factory
         return [
             'external_id' => fake()->randomNumber(8, true),
             'external_game_id' => fake()->randomNumber(8, true),
-            'url' => 'https://clips.twitch.tv/NaiveGoodWoodcockNinjaGrumpy-25Uu8L5urSxWo66M',
+            'url' => 'https://clips.twitch.tv/SavageMoldyKoalaKappaClaus',
             'title' => fake()->sentence(),
             'views' => fake()->randomNumber(3),
             'duration' => 15,
