@@ -10,6 +10,7 @@ class Game extends Model
     use HasFactory;
 
     protected $fillable = [
+        'uuid',
         'external_id',
         'name',
         'created_at',

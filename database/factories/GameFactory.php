@@ -20,6 +20,7 @@ class GameFactory extends Factory
     public function definition(): array
     {
         return [
+            'uuid' => fake()->uuid(),
             'external_id' => fake()->randomNumber(8, true),
             'name' => fake()->name(),
         ];

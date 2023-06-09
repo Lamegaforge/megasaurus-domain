@@ -20,6 +20,7 @@ class AuthorFactory extends Factory
     public function definition(): array
     {
         return [
+            'uuid' => fake()->uuid(),
             'name' => fake()->name(),
             'external_id' => fake()->randomNumber(8, true),
         ];

@@ -23,6 +23,7 @@ class ClipFactory extends Factory
     public function definition(): array
     {
         return [
+            'uuid' => fake()->uuid(),
             'external_id' => fake()->randomNumber(8, true),
             'external_game_id' => fake()->randomNumber(8, true),
             'url' => 'https://clips.twitch.tv/SavageMoldyKoalaKappaClaus',
