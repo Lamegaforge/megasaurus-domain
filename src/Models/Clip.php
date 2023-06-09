@@ -11,6 +11,7 @@ class Clip extends Model
     use HasFactory;
 
     protected $fillable = [
+        'uuid',
         'external_id',
         'external_game_id',
         'author_id',
