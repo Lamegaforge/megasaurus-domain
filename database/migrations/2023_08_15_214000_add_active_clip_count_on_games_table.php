@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('clips', function (Blueprint $table) {
+        Schema::table('games', function (Blueprint $table) {
             $table->integer('active_clip_count')->after('duration')->nullable();
         });
     }
@@ -21,7 +21,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('clips', function (Blueprint $table) {
+        Schema::table('games', function (Blueprint $table) {
             $table->dropColumn('active_clip_count');
         });
     }
